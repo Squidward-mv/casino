@@ -39,9 +39,9 @@ def gachi_casino():
         if number == users_choose:
             sql.execute(f'UPDATE users SET cash = {balance + 400} WHERE login = "{user_login}" ')
             main_db.commit()
-            print("YOU WON! ")
+            print("YOU WON!")
         else:
-            print("YOU LOSE! ")
+            print("YOU LOSE!")
             sql.execute(f'UPDATE users SET cash = {balance - 100} WHERE login = "{user_login}" ')
             main_db.commit()
 def enter():
